@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 15%,
+    rgba(121, 9, 50, 1) 73%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+}
+
+.todo-container {
+  width: auto;
+  height: auto;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+  text-shadow: 10px 10px 10px black;
+}
+
+.date-time {
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+}
+
+.form {
+  width: 100%;
+
+  & form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.todo-input {
+  width: 100%;
+  text-align: left;
+  border-radius: 1rem;
+  border: 2px solid white;
+  outline: none;
+  padding: 0.6rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 15%,
+    rgba(121, 9, 50, 1) 50%,
+    rgba(2, 0, 36, 1) 700%
+  );
+  color: white;
+  font-weight: bold;
+}
+
+.todo-btn {
+  font-size: 1.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.8rem;
+  border: 2px solid white;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  color: white;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px black;
+}
+
+.myUnOrdList {
+  width: 80%;
+}
+
+span {
+  display: inline-block;
+  width: 80%;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 0.6rem 2rem;
+  border-radius: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 15%,
+    rgba(121, 9, 50, 1) 50%,
+    rgba(2, 0, 36, 1) 700%
+  );
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.checkList {
+  text-decoration: line-through;
+}
+
+.notCheckList {
+  text-decoration: none;
+}
+
+.check-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
+  margin-right: 1rem;
+  border: 1px solid white;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: 1px solid white;
+  font-size: 1.5rem;
+}
+
+.clear-btn {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  padding: 0.5rem 1rem;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  border-radius: 1rem;
+  text-shadow: 5px 5px 5px black;
+}
+
+@media (width<=555px) {
+  form {
+    flex-direction: column;
+  }
+}

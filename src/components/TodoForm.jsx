@@ -1,8 +1,7 @@
 import { useState } from "react";
 export const TodoForm = ({ onAddTodo }) => {
-  // 2
   const [inputValue, setInputValue] = useState({});
-  // 3
+
   const handleInputChange = (value) => {
     value = value.toLowerCase();
     setInputValue({ id: value, content: value, checked: false });
@@ -13,6 +12,7 @@ export const TodoForm = ({ onAddTodo }) => {
     onAddTodo(inputValue);
     setInputValue({ id: "", content: "", checked: false });
   };
+  
   return (
     <section className="form">
       <form onSubmit={handleFormSubmit}>

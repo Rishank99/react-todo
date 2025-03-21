@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-switch {
+  width: 10rem;
+  /* height: 20rem; */
+  background-color: grey;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.switch {
+  width: 3rem;
+  aspect-ratio: 1;
+  background-color: rgb(171, 170, 170);
+  border: 2px solid white;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s linear;
+  text-transform: uppercase;
+}
+
+.off {
+  background-color: red;
+}
+
+.on {
+  background-color: green;
+  translate: 6rem;
+}
